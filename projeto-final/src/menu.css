@@ -1,0 +1,47 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  background: #1d428a;
+  border-bottom: 4px solid #ffc72c;
+}
+
+.menu a {
+  color: white;
+  padding: 14px 18px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+.menu a:hover {
+  background: #ffc72c;
+  color: #1d428a;
+}
+
+@media (min-width: 576px) {
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu a {
+    flex: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu {
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .menu a {
+    flex: none;
+    width: auto;
+  }
+}

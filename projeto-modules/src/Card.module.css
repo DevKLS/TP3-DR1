@@ -1,0 +1,33 @@
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.title {
+  margin: 15px 0 10px;
+  font-size: 20px;
+}
+
+.text {
+  font-size: 14px;
+  color: #555;
+}
+h2 {
+  margin-top: 15px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}

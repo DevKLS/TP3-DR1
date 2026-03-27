@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* HEADER */
+header {
+  background: #1e293b;
+  padding: 10px;
+}
+.navbar a:hover {
+  background: #2563eb;
+  border-radius: 5px;
+}
+/* NAVBAR CONTAINER */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  gap: 10px;
+}
+
+/* BOTÃO MENU (MOBILE) */
+#menuToggle {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* MENU MOBILE (ESCONDIDO) */
+.navbar ul {
+  display: none;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* MENU ATIVO */
+.navbar ul.active {
+  display: flex;
+}
+
+/* ITENS */
+.navbar li {
+  list-style: none;
+}
+
+/* LINKS */
+.navbar a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  color: white;
+}
+
+/* MAIN MOBILE (EMPILHADO) */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 15px;
+}
+.center section {
+  margin-bottom: 30px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    align-items: stretch; /* 🔥 ajuda a manter alinhado */
+  }
+}
+
+/* COLUNAS */
+.left,
+.center,
+.right {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.center section {
+  margin-bottom: 30px;
+}
+
+footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0 0 10px;
+}
+
+.social a {
+  color: #93c5fd;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+/* ===================== */
+/* 📲 TABLET (>=768px) */
+/* ===================== */
+@media (min-width: 768px) {
+  /* ESCONDE BOTÃO */
+  #menuToggle {
+    display: none;
+  }
+
+  /* MENU HORIZONTAL */
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  /* COLUNAS LADO A LADO */
+  main {
+    flex-direction: row;
+  }
+
+  /* FLEXBOX CORRETO */
+  .left {
+    flex: 1;
+  }
+
+  .center {
+    background: #ffffff;
+    flex: 2;
+    min-width: 0;
+  }
+
+  .right {
+    flex: 1;
+  }
+}
+
+/* ===================== */
+/* 🖥 DESKTOP (>=1200px) */
+/* ===================== */
+@media (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+.social {
+  margin-top: 10px;
+}
+
+.social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: #2563eb; /* verde que você escolheu 😏 */
+}
